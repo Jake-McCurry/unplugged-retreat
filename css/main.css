@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #e2e3ed;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -121,10 +121,15 @@ textarea {
     }
     
     a {
-      color: #e2e3ed;
       text-decoration: none;
+      color: #e2e3ed;
+      font-weight: bold;
     }
     
+    a:hover {
+      color: #527158;
+    }
+
     h2 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.875rem;
@@ -168,12 +173,12 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      border: solid 1px red;
+      background-color: #202322;
+      color: #e2e3ed;
     }
 
     header {
       padding: 15px 0;
-      border: solid 1px red;
     }
 
     header .content-wrapper {
@@ -182,20 +187,14 @@ textarea {
       justify-content: center;
       align-items: space-around; 
       margin: 0;
-      border: solid 1px red;
+      width: 100%;
     }
 
     .header-divider { 
       width: 100%;
       height: 1px;
       margin: 10px 0 20px 0;
-    }
-
-    header nav {
-      display: flex;
-      flex-flow: row wrap;
-      width: 60%;
-      border: solid 1px red;
+      border-top: solid 1px gray;
     }
 
     header nav {
@@ -209,8 +208,7 @@ textarea {
       justify-content: space-around;
       width: 100%;
       list-style-type: none;
-      border: solid 1px red;
-
+      margin: 0;
     }
     
     footer {
@@ -220,41 +218,63 @@ textarea {
     footer .content-wrapper {
       width: 55%;
       margin: 50px 0;
-      border: solid 1px red;
-
+      text-align: center;
     }
 
     footer .contact {
       margin-bottom: 50px;
-      border: solid 1px red;
-
+      font-weight: normal;
     }
+
     footer .social-icons {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      border: solid 1px red;
-
     }
   
     footer .social-icons p {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: solid 1px blue;
-
+      background-color: #527158;
     }
 
     footer .copyright {
       margin: 20px 0;
-      border: solid 1px red;
-
     }
 
     footer p {
       margin: 0;
-      border: solid 1px red;
+    }
 
+    .footer-content h4 {
+      font-weight: bolder;
+    }
+
+    aside .form {
+      margin-top: 30px;
+    }
+     
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: #2a423a;
+      font-style: italic;
+      padding: 1em;
+    }
+     
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
     }
 
 
@@ -266,7 +286,12 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;  
-      border: solid 1px red;
+      background: #202322 url("../img/hero.png") no-repeat;
+     }
+
+     .hero-area h1 {
+      font-weight: normal;
+      font-size: 2.5em;
      }
      
     /* Aside */
@@ -276,8 +301,12 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      border: solid 1px blue;
-
+      background-color: #527158;
+    }
+    
+    aside h3,
+    aside p {
+      font-weight: lighter;
     }
 
     /* Features  */
@@ -286,13 +315,12 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;   
-      border: solid 1px red;
+      background: #202322 URL("../img/amenities.png") no-repeat;
     }
 
     .features h2 {
       margin-bottom: 60px;
-      border: solid 1px red;
-
+      font-weight: normal;
     }
 
     .features .content-wrapper .features-items article p {
@@ -312,12 +340,10 @@ textarea {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      border: solid 1px red;
     }
     
     .features p {
       margin: 0;
-      border: solid 1px red;
     }
     
     /* Reviews */
@@ -326,43 +352,73 @@ textarea {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      border: solid 1px red;
+      background-color: #2a423a;
     }
 
     .reviews h2 {
       margin-bottom: 40px;
-      border: solid 1px red;
+      font-weight: normal;
     }
 
     .reviews h3 {
       width: 55%;
       margin: 20px 0;
-      border: solid 1px red;
+      font-weight: normal;
     }
 
    /* ==========================================================================
       About Page
       ========================================================================== */
     
-    .mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap; 
-  }
+      .mission {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap; 
+      background-color: #527158;
+      padding: 0 5.5%;
+    }
+
+    .mission .content-wrapper {
+      margin: 4% 0 0 0;
+    }
+
+    .mission .content-wrapper h1 {
+      margin-bottom: 0;
+    }
+
+    .mission h1,
+      .mission-content p,
+      .contact-section h2,
+      .contact-section h3,
+      .contact-section p,
+      .copyright h4 {
+        font-weight: normal;
+      }
+
+    .contact-heading h2 {
+      margin: 0;
+    }
+
+    .general-info h3 {
+      margin: 3% 0;
+    }
+    
+    .contact-wrapper {
+      padding: 0 5.5%;
+      margin: 7% 0;
+    }
 
     .contact-section {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #2a423a;
     }
 
-    .contact-content p {
-      margin: 0;
-    }
-
-  /*  ==========================================================================
+    
+    /*  ==========================================================================
       FAQ Page
       ========================================================================== */
    
@@ -371,6 +427,7 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #527158;
     }
 
     .faq .content-wrapper {
@@ -381,8 +438,17 @@ textarea {
       flex-flow: row wrap;    
     }
 
+    .faq-item p {
+      color: #9aa9a3;
+    }
+
+    .faq-item h4 {
+      font-weight: normal;
+    }
+
     .faq h2 {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      font-weight: normal;
     }
 
     .faq-content {
@@ -532,14 +598,12 @@ textarea {
       display: flex;
       justify-content: space-between;
       flex-flow: row nowrap;
-      border: solid 1px blue;
     }
     
     aside .content-wrapper .form-description, 
     aside .content-wrapper .form {
       width: 45%;
       margin: 0;
-      border: solid 1px red;
     }
     
     input {
@@ -577,15 +641,6 @@ textarea {
     .reviews p {
       display: flex;
       align-items: left;
-    }
-
-    .reviews .content-wrapper {
-      border: solid 1px red;
-    }
-
-    .reviews .content-wrapper img,
-    .reviews .content-wrapper p {
-      border: solid 1px red;
     }
 
     .reviews h2 {
@@ -642,7 +697,6 @@ textarea {
       justify-content: flex-start;
       align-items: center;
       padding-top: 20px;
-      border: solid 1px red;
       margin: 0 8.33%;
     }
 
@@ -654,7 +708,6 @@ textarea {
 
     .mission-content p {
       width: 45%;
-      border: solid 1px red;
       margin: 2% 0;
     }
 
@@ -663,7 +716,6 @@ textarea {
     }
 
     .mission .content-wrapper h1 {
-      border: solid 1px red;
       font-size: 2rem;
     }
 
@@ -671,12 +723,10 @@ textarea {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      border: solid 1px red;
 
     }
 
     .contact-wrapper {
-      border: solid 1px red;
       margin: 0 8.33%;
     }
 
@@ -685,7 +735,6 @@ textarea {
       flex-flow: row nowrap;
       justify-content: space-between;
       margin-right: 2%;
-      border: solid 1px red;
     }
 
     .contact-section .content-wrapper h2 {
@@ -698,7 +747,6 @@ textarea {
     
     .faq .content-wrapper {
       justify-content: space-between; 
-      border: solid 1px red;
     }
     
     .faq-head {
@@ -706,7 +754,6 @@ textarea {
     }
 
     .faq-item {
-      border: solid 1px red;
       flex-basis: 45%;
     }
 
