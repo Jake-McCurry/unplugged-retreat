@@ -416,13 +416,20 @@ textarea {
       margin-bottom: 0;
     }
 
-    .map  {
-      background: URL("../img/map.jpg") center no-repeat #527158;
-      background-size: cover;
+    .map figure {
+      width: 100%;
+      height: 0;
+      padding-bottom: 80%;
+      overflow: hidden;
+      position: relative;
     }
 
-    .map figure {
-      margin: 0;
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     .mission h1,
@@ -807,12 +814,7 @@ textarea {
     }
 
     .contact-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-
     }
-
 
     .contact-text {
       display: flex;
@@ -922,13 +924,9 @@ textarea {
     width: 83.15%;
   }
 
-  .contact-wrapper {
-    margin: 0;
-    width: 100%;
-  }
-
+  .contact-wrapper,
   .contact-section {
-    margin-left: 8.33%;
+    width: 100%;
   }
 
   /* ==========================================================================
