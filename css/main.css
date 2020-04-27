@@ -813,7 +813,8 @@ textarea {
       font-size: 2rem;
     }
 
-    .contact-section {
+    .map figure {
+      padding-bottom: 50%;
     }
 
     .contact-text {
@@ -922,6 +923,10 @@ textarea {
   .mission {
     display: flex;
     width: 83.15%;
+  }
+
+  .map figure {
+    padding-bottom: 35%;
   }
 
   .contact-wrapper,
