@@ -442,8 +442,8 @@ textarea {
       margin: 20px 0;
     }
     
-    .contact-wrapper {
-      padding: 0 5.5%;
+    .contact-section .contact-wrapper {
+      padding: 0 18.33%;
       margin: 7% 0;
     }
 
@@ -599,15 +599,14 @@ textarea {
     
     /* Header */
 
-    header {
-      justify-content: space-around;
-      padding: 2% 8.33%;
-    }
-
     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
       align-items: center;
+    }
+
+    header figure {
+      justify-content: flex-start;
     }
 
     header nav {
@@ -778,12 +777,13 @@ textarea {
     /* ==========================================================================
       About Page
       ========================================================================== */
+
     .mission {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       padding-top: 20px;
-      padding:  4% 8.33%;
+      padding:  4% 0%;
     }
 
     .mission-content {
@@ -791,6 +791,7 @@ textarea {
       flex-flow: row nowrap;
       justify-content: space-between;
       padding: 3% 0;
+      max-width: 640px;
     }
 
     .mission-content p {
@@ -803,7 +804,7 @@ textarea {
     }
 
     .mission .content-wrapper h1 {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
 
     .map figure {
@@ -828,6 +829,7 @@ textarea {
     
     .faq .content-wrapper {
       justify-content: space-between; 
+      margin-bottom: 50px;
     }
     
     .faq-head {
@@ -849,7 +851,6 @@ textarea {
   /* 120+120+80(12)=1200 - Margins: 20% */
 
   .content-wrapper,
-  .contact-section,
   .footer {
     max-width: 960px;
     width: 100%;
@@ -915,7 +916,8 @@ textarea {
 
   .mission {
     display: flex;
-    width: 83.15%;
+    padding: 2.5% 0;
+    justify-content: center; 
   }
 
   .map figure {
@@ -927,6 +929,11 @@ textarea {
     width: 100%;
   }
 
+  .mission-content {     
+    max-width: 960px;
+    width: 100%;
+;}
+
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
@@ -936,6 +943,10 @@ textarea {
 
   footer .content-wrapper {
     width: 100%;
+  }
+
+  .faq-item h4 {
+    justify-content: flex-start;
   }
 
   .footer-content {
