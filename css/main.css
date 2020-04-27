@@ -238,13 +238,7 @@ textarea {
       display: flex;
       justify-content: space-around;
       align-items: center;
-    }
-  
-    footer .social-icons p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #527158;
+      font-size: 2em;
     }
 
     footer .copyright {
@@ -753,7 +747,7 @@ textarea {
     }
 
     .social-icons {
-      width: 130px;
+      width: 230px;
     }
 
     .social h4 {
