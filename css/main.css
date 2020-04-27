@@ -358,10 +358,9 @@ textarea {
       justify-content: center;
     }
     
-    .feature-icon img {
-      display: flex;
-      width: 45%;
-      margin-bottom: 10px;
+    .features i {
+      margin-bottom: 40px;
+      font-size: 3.75em;
     }
 
     .features p {
