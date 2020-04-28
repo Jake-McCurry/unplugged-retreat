@@ -370,6 +370,11 @@ textarea {
       background-color: #2a423a;
     }
 
+    .reviews .content-wrapper {
+      padding: 50px 0;
+      margin: 0;
+    }
+
     .reviews h2 {
       margin: 0 0 20px 0;
       font-weight: normal;
@@ -443,8 +448,8 @@ textarea {
     }
     
     .contact-section .contact-wrapper {
-      padding: 0 18.33%;
       margin: 7% 0;
+      padding: 0 5%;
     }
 
     .contact-section {
@@ -592,7 +597,8 @@ textarea {
   
   /* General styles */
   
-    .content-wrapper {
+    .content-wrapper,
+    .contact-wrapper {
       max-width: 640px;
       margin: 100px 0;
     }
@@ -706,7 +712,7 @@ textarea {
 
     .reviews h2 {
       display: flex;
-      margin: 25px 0;
+      margin: 0 0 25px 0;
       font-size: 2.5rem;
     }
 
@@ -807,6 +813,10 @@ textarea {
       font-size: 2.25rem;
     }
 
+    .contact-section .contact-wrapper {
+      justify-content: center;
+    }
+
     .map figure {
       padding-bottom: 50%;
     }
@@ -851,7 +861,8 @@ textarea {
   /* 120+120+80(12)=1200 - Margins: 20% */
 
   .content-wrapper,
-  .footer {
+  .footer,
+  .contact-wrapper {
     max-width: 960px;
     width: 100%;
     justify-content: space-between;
@@ -924,12 +935,8 @@ textarea {
     padding-bottom: 35%;
   }
 
-  .contact-wrapper,
-  .contact-section {
-    width: 100%;
-  }
-
-  .mission-content {     
+  .mission-content,
+  .map .contact-wrapper {     
     max-width: 960px;
     width: 100%;
 ;}
